@@ -138,3 +138,13 @@ Create a `Dockerfile` using the following steps:
 :information_source: We will see later the runnning of the server.
 
 You can lint your dockerfile using the following website: https://hadolint.github.io/hadolint/
+
+
+### Link the backend and the frontend using docker-compose
+
+Create a `docker-compose.yml` file at the root of the project using the following steps:
+
+- Create a service for the backend
+- Create a service for the frontend with a dependency on the backend
+
+_This is the most difficult part of the session. If you are stuck, ask for help. It is on purpose that we do not provide a lot of details on how to do it, you should be able to find the information by yourself._
