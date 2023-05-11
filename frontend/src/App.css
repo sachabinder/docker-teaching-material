@@ -1,0 +1,163 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  margin: 50px auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border: none;
+  background: #f8f9fa;
+}
+
+.tab-list {
+  margin-bottom: 20px;
+}
+
+.tab-list button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-right: 5px;
+}
+
+.tab-list button.active {
+  border-bottom: 2px solid #007bff;
+}
+
+.todo-title {
+  font-size: 18px;
+}
+
+.completed-todo {
+  text-decoration: line-through;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.modal-header {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-footer {
+  border-top: 1px solid #e9ecef;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* ... other css styles ... */
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* Styles for Add Task button */
+.btn-success {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+}
+
+/* Styles for Add Task button on hover */
+.btn-success:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+/* Add a keyframe animation */
+@keyframes example {
+  from {background-color: #007bff;}
+  to {background-color: #0056b3;}
+}
+
+/* Apply the animation to the Add Task button */
+.btn-success:hover {
+  animation-name: example;
+  animation-duration: 0.3s;
+}
