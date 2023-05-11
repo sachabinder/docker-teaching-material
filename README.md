@@ -89,3 +89,52 @@ npm start
 ```
 
 You can now access the frontend at http://localhost:3000.
+
+:checkered_flag: If everithing is working, you can now move on to the dockerization. Otherwise, ask for help.
+
+
+## Dockerization of the application
+
+You see that it is not very convenient to have to run two servers to run the application. The goal of this session is to dockerize the application so that it can be run with a single command. To do so, we will use docker-compose. Docker-compose is a tool that allows to run multiple docker containers at once.
+
+### Dockerize the backend
+
+Navigate to the `backend` folder:
+
+```bash
+cd backend
+```
+
+Create a `Dockerfile` using the following steps: 
+
+- What is the base image should we use? (hint: you favorite programming language)
+- Create a working directory
+- Install the dependencies
+- Copy the source code
+- What port should we expose ? (hint: the port used by the django server)
+- Create an entrypoint that activate the Pipenv shell and apply the migrations and add it to the Dockerfile
+
+:information_source: We will see later the runnning of the server.
+
+You can lint your dockerfile using the following website: https://hadolint.github.io/hadolint/
+
+
+### Dockerize the frontend
+
+Navigate to the `frontend` folder:
+
+```bash
+cd frontend
+```
+
+Create a `Dockerfile` using the following steps:
+
+- What is the base image should we use? (hint: a point in a network or diagram at which lines or pathways intersect or branch)
+- Create a working directory
+- Install the dependencies
+- Copy the source code
+- What port should we expose ? (hint: the port used by the react server)
+
+:information_source: We will see later the runnning of the server.
+
+You can lint your dockerfile using the following website: https://hadolint.github.io/hadolint/
