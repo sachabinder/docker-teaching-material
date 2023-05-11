@@ -148,3 +148,29 @@ Create a `docker-compose.yml` file at the root of the project using the followin
 - Create a service for the frontend with a dependency on the backend
 
 _This is the most difficult part of the session. If you are stuck, ask for help. It is on purpose that we do not provide a lot of details on how to do it, you should be able to find the information by yourself._
+
+
+## Run the application
+
+Now that the application is dockerized, we can run it using docker-compose. To do so, we firs need to build the images:
+
+```bash
+docker-compose build
+```
+
+Then, we can run the application:
+
+```bash
+docker-compose up
+```
+
+You can now access the application at http://localhost:3000. Check that everything is working as expected. If not, ask for help.
+
+
+## Some elements to go further
+
+If you completed the session before the end of the time, or if you want to go further, here are some elements that you can try:
+
+- Replace the sqlite database by a postgres database by creating a new service in the docker-compose file and linking it to the backend.
+- Create an `.env` file at the root of the project and use it to configure the backend and the frontend by replacing the hardcoded values in the `settings.py`, `config.js`, `Dockerfile` and `docker-compose by environment variables.
+- Dockerize the application for the production by creating a `Dockerfile.prod` and a `docker-compose.prod.yml` file.
